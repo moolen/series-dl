@@ -6,6 +6,14 @@ Batch download series. inspired by [github.com/alexander-schoch/scripts](https:/
 
 if you have a go toolchain installed: `go get -u github.com/moolen/series-dl`
 
+You need to have `youtube-dl` installed. Having `phantomjs` is strongly recommended.
+
+For archlinux users:
+
+``` sh
+$ yaourt -S phantomjs-bin youtube-dl
+```
+
 ## build
 
 ```sh
