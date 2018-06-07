@@ -88,6 +88,7 @@ func (e *Episode) Download() error {
 		return nil
 	}
 
+	// todo: increase value or make it configurable?
 	maxAttempts := 15
 	for _, link := range e.Link {
 		<-time.After(time.Second)
@@ -114,6 +115,7 @@ func (e *Episode) Download() error {
 		watchButtonLink, _ := doc.Find("a.watch-button").Attr("href")
 		log.Infof("found watch button link: %s", watchButtonLink)
 
+		// todo: specify --output to normalize the output filename
 		cmd := exec.Command("youtube-dl", "-v", "--newline", watchButtonLink)
 		cmd.Env = os.Environ()
 		output, err := cmd.StdoutPipe()
@@ -126,6 +128,8 @@ func (e *Episode) Download() error {
 			log.Warn("could not start youtube-dl")
 			continue
 		}
+
+		// we want to parse the download progress metadata that is printed to stdout
 		scanner := bufio.NewScanner(output)
 		go func() {
 			for scanner.Scan() {
