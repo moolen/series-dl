@@ -60,6 +60,28 @@ INFO[0000] found episode: S2E1 Chapter 14
 INFO[0000] found episode: S2E2 Chapter 15
 INFO[0000] found episode: S2E3 Chapter 16
 [...]
+INFO[0001] downloading S1E1 Chapter 1
+INFO[0001] downloading S1E2 Chapter 2
+INFO[0002] downloading S1E3 Chapter 3
+INFO[0002] trying link [redacted]
+INFO[0002] found watch button link: [redacted]
+INFO[0002] downloading S1E4 Chapter 4
+INFO[0002] trying link [redacted]
+INFO[0003] found watch button link: [redacted]
+INFO[0003] trying link [redacted]
+INFO[0003] found watch button link: [redacted]
+INFO[0003] trying link [redacted]
+INFO[0003] found watch button link: [redacted]
+INFO[0004] S1E1 [0.0%] [Unknown]
+INFO[0004] S1E1 [0.0%] [Unknown]
+INFO[0004] S1E1 [0.0%] [Unknown]
+INFO[0004] S1E1 [0.0%] [12.32MiB/s]
+INFO[0004] S1E1 [0.0%] [19.61MiB/s]
+INFO[0005] S1E1 [0.0%] [1.44MiB/s]
+INFO[0005] S1E1 [0.0%] [1.23MiB/s]
+INFO[0005] S1E1 [0.1%] [1.85MiB/s]
+INFO[0005] S1E1 [0.1%] [2.53MiB/s]
+INFO[0005] S1E1 [0.2%] [3.57MiB/s]
 ```
 
 ## Known Issues
