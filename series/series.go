@@ -16,7 +16,7 @@ import (
 )
 
 var (
-	baseURL  = "https://www.watchepisodeseries.com"
+	baseURL  = "http://www.watchepisodeseries.com"
 	intRegex = regexp.MustCompile("[^0-9]+")
 )
 
